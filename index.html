@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saurabh Mess & Tiffin Service</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f5f5f5;
+}
+header{
+background:#0b7a3d;
+color:#fff;
+text-align:center;
+padding:20px;
+}
+header h1{
+margin:0;
+font-size:34px;
+}
+header p{
+font-size:18px;
+}
+section{
+max-width:900px;
+margin:20px auto;
+padding:20px;
+background:#fff;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+h2{
+color:#0b7a3d;
+}
+.price{
+color:red;
+font-weight:bold;
+font-size:22px;
+}
+button{
+background:#0b7a3d;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+}
+footer{
+background:#222;
+color:#fff;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>🍱 SAURABH MESS & TIFFIN SERVICE</h1>
+<p>Quality Ka Vada, Swad Sabse Jyada</p>
+</header>
+
+<section>
+<h2>🌅 Breakfast (8 AM - 10 AM)</h2>
+
+<p>4 Aloo Paratha + Dahi + Chutney + Salad</p>
+<p class="price">₹80</p>
+
+<p>4 Sattu Paratha + Dahi + Chutney + Salad</p>
+<p class="price">₹80</p>
+</section>
+
+<section>
+<h2>☀️ Lunch (11 AM - 2 PM)</h2>
+
+<ul>
+<li>4 Roti</li>
+<li>Jeera Rice</li>
+<li>Seasonal Sabji</li>
+<li>Sukha Sabji</li>
+<li>Dal</li>
+<li>Chokha</li>
+<li>Achar</li>
+<li>Salad</li>
+</ul>
+
+<p class="price">₹100</p>
+
+<button onclick="order('Lunch Thali')">
+Order on WhatsApp
+</button>
+
+</section>
+
+<section>
+
+<h2>🌙 Dinner (7 PM - 10 PM)</h2>
+
+<ul>
+<li>4 Roti</li>
+<li>Seasonal Sabji</li>
+<li>Kheer / Sebai</li>
+<li>Salad</li>
+<li>Achar</li>
+<li>Bhunjiya</li>
+<li>Special Order Par Chawal</li>
+</ul>
+
+<p class="price">₹90</p>
+
+<button onclick="order('Dinner Thali')">
+Order on WhatsApp
+</button>
+
+</section>
+
+<footer>
+
+📍 Jyotish Path, Ram Krishna Nagar, Patna-27
+
+<br><br>
+
+📞 7488130373 | 7870349173
+
+<br><br>
+
+🚚 Ghar Aur Karya Sthal Par Free Delivery
+
+</footer>
+
+<script>
+function order(item){
+
+let url="https://wa.me/917488130373?text="+encodeURIComponent("Hello, I want to order "+item);
+
+window.open(url);
+
+}
+</script>
+
+</body>
+</html>
